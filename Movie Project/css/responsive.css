@@ -1,0 +1,71 @@
+/* Media queries */
+/* target digital screens - both statements need to be true for the css below to render*/
+@media screen and (min-width: 480px) {
+  
+  /*************************************
+    Determining the three column width for gallery
+    3 5 = 15 margins
+    100 -15 = 85 percent divided by 3 = 28.333
+  ***************************************/
+  
+  /*************************************
+   PAGE PORTFOLIO
+  ***************************************/
+
+    /* Determining the three column width for gallery
+    3 5 = 15 margins
+    100 -15 = 85 percent divided by 3 = 28.333 */
+  #gallery li {
+    width: 28.3333%;
+    height: 28.3333%;
+  }
+  
+  #gallery li:nth-child(4n) {
+    clear: left;
+  }
+  
+
+}
+
+/*media query for larger devices */
+@media screen and (min-width: 660px) {
+  /*************************************
+   HEADER
+  ***************************************/
+  
+  nav {
+    background: none;
+    float: right;
+    font-size: 1.125em;
+    margin-right: 5%;
+    text-align: right;
+    width: 40%;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+  }
+  
+  #logo {
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    width: 45%;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 0.825em;
+    margin-bottom: 20px;
+  }
+  
+  header {
+    border-bottom: 5px solid #599a68;
+    margin-bottom: 50px;
+  }
+}
